@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+
+*{
+    font-family: "Roboto", sans-serif;}
+
+    body {
+        background: linear-gradient(
+          150deg,  /* This creates the diagonal direction (bottom-left to top-right) */
+          #ffffff 0%,
+          #ffffff 50%,
+          #e6957b 70%,
+          #7f8bc5 85%
+        );
+        min-height: 100vh;
+      }
