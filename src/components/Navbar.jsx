@@ -38,10 +38,10 @@ const Navbar = () => {
               className="cursor-pointer border px-2 py-1 rounded-lg"
               onChange={(e) => changeLanguage(e.target.value)}
             >
-              <option className="text-xs" value="en">
+              <option className="text-xs md:text-base" value="en">
                 English
               </option>
-              <option className="text-xs" value="ru">
+              <option className="text-xs md:text-base" value="ru">
                 Русский
               </option>
             </select>
