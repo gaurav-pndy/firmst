@@ -1,17 +1,22 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
-const teamMembers = [
-  {
-    name: "Murali Muthu",
-    role: "Department Of Pathoanatomy",
-    hospital: "Amrita Hospital",
-    location: "Kochi, India",
-  },
-  { name: "Pavel Frolov", role: "", hospital: "", location: "" },
-  { name: "Anna Voroninna", role: "", hospital: "", location: "" },
-];
+// const teamMembers = [
+//   {
+//     name: "Murali Muthu",
+//     role: "Department Of Pathoanatomy",
+//     hospital: "Amrita Hospital",
+//     location: "Kochi, India",
+//   },
+//   { name: "Pavel Frolov", role: "", hospital: "", location: "" },
+//   { name: "Anna Voroninna", role: "", hospital: "", location: "" },
+// ];
 
 const TeamSection = () => {
+  const { t } = useTranslation();
+
+  const teamMembers = t("team.members", { returnObjects: true });
+
   return (
     <div className="px-3 md:px-0  mt-12 flex justify-center">
       <div className="bg-white rounded-2xl shadow-lg px-8 py-7  max-w-4xl w-full">
@@ -28,13 +33,11 @@ const TeamSection = () => {
               <h3 className=" font-bold text-[#cf6239] mb-1">
                 {member.name.toUpperCase()}
               </h3>
-              {member.role && (
-                <p className="text-purple-900 leading-tight font-[400] text-sm">
-                  {member.role} <br />
-                  {member.hospital} <br />
-                  {member.location}
-                </p>
-              )}
+
+              <p
+                className="text-purple-900 leading-tight font-[400] text-sm"
+                dangerouslySetInnerHTML={{ __html: member.description }}
+              ></p>
             </div>
           ))}
         </div>

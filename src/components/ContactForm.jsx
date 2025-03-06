@@ -1,33 +1,117 @@
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 const ContactForm = () => {
+  const { t } = useTranslation();
+
+  // const [isChecked, setIsChecked] = useState(false);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    specialization: "",
+    email: "",
+    acceptTerms: false,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+
+  const handlePhoneChange = (e) => {
+    setFormData({ ...formData, phone: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch(
+        "http://localhost:5000/api/firmst-form/submit-form",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+        toast.success(t("requestForm.success_message"), {
+          position: "top-center",
+        });
+        console.log(data.message); // Handle success response
+
+        // Clear the form data after successful submission
+        setFormData({
+          name: "",
+          phone: "",
+          specialization: "",
+          email: "",
+          acceptTerms: false,
+        });
+      } else {
+        const errorData = await response.json();
+        console.error("Error from server:", errorData.message);
+        toast.error(t("requestForm.error_message"), { position: "top-center" });
+      }
+    } catch (err) {
+      console.error("Error submitting the form:", err);
+      toast.error(t("requestForm.network_error_message"), {
+        position: "top-center",
+      });
+    }
+  };
   return (
     <div className="bg-white p-6 mt-10 md:p-8 rounded-xl shadow-gray-300 shadow-2xl max-w-4xl mx-auto border-3 border-gray-400 md:border-gray-200">
-      <h3 className="text-xl mt-2 md:text-[1.35rem] font-extrabold text-center text-[#cf6239] uppercase leading-6 tracking-wide">
-        Submit the Request Form <br className="hidden md:inline" />
-        <span className="text-[#cf6239] font-bold">
+      <h3
+        className="text-xl mt-2 md:text-[1.35rem] font-extrabold text-center text-[#cf6239] uppercase leading-6 tracking-wide"
+        dangerouslySetInnerHTML={{ __html: t("requestForm.heading") }}
+      >
+        {/* Submit the Request Form <br className="hidden md:inline" />
+        <span className="text-[#cf6239] font-extrabold">
           to Receive Complimentary Consultation Now!
-        </span>
+        </span> */}
+        {/* {t("requestForm.heading")} */}
       </h3>
 
       <h4 className="tracking-wide font-[800] text-center text-purple-900 mt-3">
         CONTACT INFORMATION
       </h4>
 
-      <form className="grid md:max-w-[75%] mx-auto grid-cols-1 md:grid-cols-2 gap-7 mt-4">
+      <form
+        onSubmit={handleSubmit}
+        className="grid md:max-w-[75%] mx-auto grid-cols-1 md:grid-cols-2 gap-7 mt-4"
+      >
         <div>
           <label className="block mb-1 text-gray-500">
-            Full Name <span className="text-red-500">*</span>
+            {t("requestForm.name")}
+            {/* <span className="text-red-500">*</span> */}
           </label>
           <input
+            value={formData.name}
+            onChange={handleChange}
+            required
             type="text"
+            name="name"
             className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
           />
         </div>
 
         <div>
           <label className="block mb-1 text-gray-500">
-            Contact Number <span className="text-red-500">*</span>
+            {t("requestForm.contact")}
+            {/* <span className="text-red-500">*</span> */}
           </label>
           <input
+            value={formData.phone}
+            onChange={handlePhoneChange}
             type="tel"
             className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
           />
@@ -35,20 +119,30 @@ const ContactForm = () => {
 
         <div>
           <label className="block mb-1 text-gray-500">
-            Specialization of Interest <span className="text-red-500">*</span>
+            {t("requestForm.specialization")}
+            {/* <span className="text-red-500">*</span> */}
           </label>
           <input
+            value={formData.specialization}
+            onChange={handleChange}
+            required
             type="text"
+            name="specialization"
             className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
           />
         </div>
 
         <div>
           <label className="block mb-1 text-gray-500">
-            Email <span className="text-red-500">*</span>
+            {t("requestForm.email")}
+            {/* <span className="text-red-500">*</span> */}
           </label>
           <input
+            value={formData.email}
+            onChange={handleChange}
+            required
             type="email"
+            name="email"
             className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
           />
         </div>
@@ -56,25 +150,32 @@ const ContactForm = () => {
 
       <div className="md:max-w-[75%] mx-auto mt-5">
         <p className="text-xs text-gray-500 mt-4 tracking-wide leading-tight">
-          Your personal data is collected and processed in accordance with the
-          Rules of the EU Parliament and Council of April 27, 2016 No. 2016/679,
-          namely: “Regulations on the protection of individuals regarding the
-          processing of their personal data and free movement of such data”, as
-          well as on the basis of the repeal of Directive 95/46 / We (general
-          data protection rules), i.e. only on the basis of the consent of the
-          owner of such data.
+          {t("requestForm.content")}
         </p>
 
         <div className="flex items-center gap-2 mt-3">
-          <input type="checkbox" className="w-2 h-2" />
-          <label className="text-[0.65rem] text-gray-500">
-            I have read and agree to the website terms and conditions
-            <span className="text-red-500">*</span>
+          <input
+            type="checkbox"
+            name="acceptTerms"
+            checked={formData.acceptTerms}
+            onChange={handleChange}
+            required
+            id="acceptTerms"
+            className="w-4 h-4"
+          />
+          <label className="text-[0.8rem] text-gray-500">
+            {t("requestForm.accept_terms")}
+
+            {/* <span className="text-red-500">*</span> */}
           </label>
         </div>
 
-        <button className="bg-[#cf6239] hover:bg-[#b24e2a] transition text-white font-semibold py-3 w-[50%] text-sm cursor-pointer block mx-auto rounded mt-4">
-          Place Order
+        <button
+          type="submit"
+          disabled={!formData.acceptTerms}
+          className={`disabled:opacity-70 disabled:cursor-not-allowed bg-[#cf6239] hover:bg-[#b24e2a] transition text-white font-semibold py-3 w-[50%] text-sm cursor-pointer block mx-auto rounded mt-4`}
+        >
+          {t("requestForm.button")}
         </button>
       </div>
     </div>

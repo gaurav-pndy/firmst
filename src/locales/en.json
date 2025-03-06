@@ -1,0 +1,201 @@
+{
+    "home": "Home",
+    "services": "Services",
+    "reviews": "Reviews",
+    "about": "About",
+    "contact_number": "+123 456 7890",
+    "whatsapp": "WhatsApp",
+    "language": "Language",
+  
+    "heroSection": {
+      "hero_title": "We Offer The Best Medical Internship Programmes Abroad",
+      "hero_description": "Join the leading medical internship programmes designed to provide hands-on experience in top hospitals across the globe. Start your journey today with professional guidance every step of the way.",
+      "cta_button": "Free Consultation"
+    },
+  
+    "success_stories": {
+      "heading": "Our Success Stories",
+      "story1": "15 years of experience in organising successful Medical programmes for Healthcare Professionals!",
+      "story2": "Exposure to numerous Medical cases & hands-on Opportunities! <br/> <br/> More than 100 Medical Interns have been sent abroad!",
+      "story3": "Get Trained By Renowned Medical Experts",
+      "story4": "Fast & Guaranteed Visa Application Services"
+    },
+  
+    "requestForm": {
+      "heading": "Submit the Request Form <br/> to Receive Complimentary Consultation Now!",
+      "description": "Submit the request form to receive complimentary consultation now",
+      "name": "Full Name *",
+      "contact": "Contact Number *",
+      "specialization": "Specialization of Interest *",
+      "email": "Email *",
+      "accept_terms": "I have read and agree to the website terms and conditions*",
+      "terms_conditions": "",
+      "submit": "Submit",
+      "success_message": "Form submitted successfully!",
+      "error_message": "Failed to submit the form. Please try again.",
+      "network_error_message": "Network error! Please check your connection.",
+      "content": "Your personal data is collected and processed in accordance with the Rules of the EU Parliament and Council of April 27, 2016 No. 2016/679, namely: “Regulations on the protection of individuals regarding the processing of their personal data and free movement of such data”, as well as on the basis of the repeal of Directive 95/46 / WE (general data protection rules), i.e. only on the basis of the consent of the owner of such data.",
+      "button": "Place Order"
+    },
+  
+    "feedback": {
+      "heading": "Feedback Form Our Former Interns",
+      "subheading": "You’re Welcome To Network With Our Interns  <br className='hidden md:inline' /> To Learn Further About Us!"
+    },
+  
+    "address":{
+      "title" : "Volokolomskoe Shosse,",
+      "descriptionOne":" 1c1 Office 606C,",
+      "descriptionTwo":"Moscow, Russia, 125080"
+    },
+    "process": {
+      "heading": "HOW DO WE WORK",
+      "subheading": "Easy To Join",
+      "steps": [
+        {
+          "title": "STEP 1",
+          "description": "Sign up for our complimentary consultation"
+        },
+        {
+          "title": "STEP 2",
+          "description": "Fill up our application form and let us know the hospital and specialization of your choice"
+        },
+        {
+          "title": "STEP 3",
+          "description": "Receive feedback from our internship specialist and proceed with payment"
+        },
+        {
+          "title": "STEP 4",
+          "description": "Our team will proceed with your documentation process"
+        },
+        {
+          "title": "STEP 5",
+          "description": "We will assist you to ensure successful completion of your desired fellowship programme!"
+        }
+      ]
+    },
+  
+    "programs": {
+      "heading": " List Of Hospitals Where <br /> Firmsts Fellowship Programmes Are Conducted.",
+      "locations": [
+        {
+          "title": "INDIA",
+          "points": [
+            "UCMS-DELHI",
+            "AMRITA HOSPITAL-KOCHI",
+            "AMRITA HOSPITAL-FARIDABAD",
+            "TATA MEDICAL CENTRE-CALCUTTA",
+            "CACHAR CANCER CENTRE-SILCHAR, ASSAM"
+          ],
+          "image": "https://static.wixstatic.com/media/df6cc5_03d2bb04cb16409e9817d754772ee1ef~mv2.png"
+        },
+        {
+          "title": "HUNGARY",
+          "points": [
+            "DUNA MEDICAL CENTRE-BUDAPEST",
+            "UNIVERSITY OF SZEGED-SZEGED"
+          ],
+          "image": "https://static.wixstatic.com/media/df6cc5_8bfe6899c84a441fa36a86d4bd3f37fb~mv2.png"
+        },
+        {
+          "title": "SWITZERLAND",
+          "points": ["GENOLIER CLINIC-GENOLIER"],
+          "image": "https://static.wixstatic.com/media/df6cc5_dad03a1661514812b69afad8773a5ea9~mv2.png"
+        }
+      ]
+    },
+    "copyright": {
+      "title": "© 2025 FIRMST. All rights reserved."
+    },
+    "LoginPage": {
+      "title": "Admin Login",
+      "emailLabel": "Email Address:",
+      "emailPlaceholder": "Enter your email",
+      "passwordLabel": "Password:",
+      "passwordPlaceholder": "Enter your password",
+      "loginButton": "Login",
+      "loginSuccess": "Login successful! Redirecting...",
+      "loginError": "Invalid login credentials!",
+      "loginFailed": "An error occurred. Please try again."
+    },
+  
+    "userDetails": {
+      "header": "User Details",
+      "userInformation": "User Information",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "specialization": "Specialization",
+      "status": "Status",
+      "completed": "Completed",
+      "pending": "Pending",
+      "uncontacted": "Uncontacted",
+      "notes": "Notes",
+      "edit": "Edit",
+      "save": "Save",
+      "cancel": "Cancel",
+      "deleteUser": "Delete User",
+      "loading": "Loading user details...",
+      "successMessage": "Changes saved successfully!",
+      "errorMessage": "Failed to save changes.",
+      "deleteSuccess": "User deleted successfully!",
+      "deleteFail": "Failed to delete user."
+    },
+    "homepage": {
+      "title": "We offer the best medical intership programmes abroad",
+      "description": "We help make your dream come true: we select study programs, scholarships and grants, and provide support at all stages of admission to the best universities in the world.",
+      "button": "free consultation"
+    },
+    "successStory": {
+      "title": "Our Success Stories",
+      "sectionOne": {
+        "title": "15+ Years",
+        "description": "Of Experience Organising Successful Medical Programmes"
+      },
+      "sectionTwo": {
+        "title": "100+",
+        "description": "Medical interns have been sent abroad and trained by renowned medical experts"
+      },
+      "sectionThree": {
+        "title": "100%",
+        "description": "Fast and guaranteed visa application services"
+      }
+    },
+    "navbar": {
+      "home": "Home",
+      "services": "Services",
+      "reviews": "Reviews",
+      "about": "About"
+    },
+    "dashboard": {
+      "title": "User Dashboard",
+      "searchPlaceholder": "🔍 Search by name, email, or phone",
+      "allStatus": "All Status",
+      "completed": "Completed",
+      "pending": "Pending",
+      "uncontacted": "Uncontacted",
+      "status": "Status",
+      "noUsers": "No users found or failed to load users."
+    },
+    "team" :{
+      "title": "OUR TEAM",
+      "members": [
+        {
+          "name": "MURALI MUTHU",
+          "description": "Department Of Pathoanatomy <br/> Amrita Hospital <br/> Kochi, India"
+        },
+        {
+          "name": "PAVEL FROLOV",
+          "description": ""
+        },
+        {
+          "name": "ANNA VORONINNA",
+          "description": ""
+        }
+      ]
+    },
+    "footer": {
+      "title": "CONTACT US TO RECEIVE COMPLIMENTARY CONSULTATION NOW !"
+    }
+  }
+  

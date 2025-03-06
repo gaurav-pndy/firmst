@@ -1,18 +1,19 @@
+import { useTranslation } from "react-i18next";
+import PropTypes from "prop-types"; // Import PropTypes
+
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative lg:min-h-[55vh] flex items-center justify-center text-white bg-[#cf6239]">
       <div className="relative w-full pb-6 md:py-0 h-full z-10 flex flex-col-reverse md:flex-row items-center md:justify-between max-w-5xl mx-auto px-4 md:px-0">
         <div className="w-full md:w-[40%] text-center md:text-left my-4 md:my-0  md:pl-4 lg:pl-20">
           <h2 className="text-3xl md:text-[2.1rem] font-[900] leading-tight drop-shadow-xl">
-            We Offer The Best Medical Internship{" "}
-            <span className="hidden sm:inline">
-              <br />
-            </span>{" "}
-            Programmes Abroad!
+            {t("homepage.title")}
           </h2>
 
           <button className="mt-4 md:mt-6 bg-[#002379] hover:bg-[#001379] cursor-pointer px-4 py-2 rounded text-base md:text-lg text-white shadow-black/60 shadow-md md:shadow-2xl">
-            Complimentary Consultation
+            {t("homepage.button")}
           </button>
         </div>
 

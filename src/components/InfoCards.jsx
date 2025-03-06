@@ -1,21 +1,24 @@
+import { useTranslation } from "react-i18next";
 import { IoStar } from "react-icons/io5";
 
-const features = [
-  {
-    desc: "15 Years Of Experience In Organising Successful Medical Programmes For Health Care Professionals",
-  },
-  {
-    desc: "Exposure To Numerous Medical Cases & Hands-On Opportunities! <br/> <br/> More Than 100 Medical Interns Have Been Sent Aboard!",
-  },
-  {
-    desc: "Get Trained By Renowned Medical Experts",
-  },
-  {
-    desc: "Fast & Guaranteed Visa Application Services",
-  },
-];
-
 const InfoCards = () => {
+  const { t } = useTranslation();
+
+  const features = [
+    {
+      desc: t("success_stories.story1"),
+    },
+    {
+      desc: t("success_stories.story2"),
+    },
+    {
+      desc: t("success_stories.story3"),
+    },
+    {
+      desc: t("success_stories.story4"),
+    },
+  ];
+
   return (
     <div className="max-w-4xl  mx-auto grid grid-cols-2 md:grid-cols-4 gap-5 px-4 md:px-1  my-8">
       {features.map((feature, index) => (
