@@ -45,6 +45,7 @@
 
 
     "feedbacks": {
+      "button": "Read Feedback",
       "content":[ 
         {
           "userImage":         "/feedbackImages/ekaterina/user.jpg",

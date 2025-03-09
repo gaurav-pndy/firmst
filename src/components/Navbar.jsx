@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="flex flex-row-reverse md:flex-row gap-5 md:gap-3 items-center">
           <div className="flex flex-col-reverse md:flex-row gap-0 items-center md:gap-3">
             <span className="md:mr-3 md:text-lg text-purple-950">
-              +7 999 999 000
+              +7-931-111-44-55
             </span>
             <div className="flex gap-2 md:gap-3">
               <img

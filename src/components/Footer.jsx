@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
 
           <div className="hidden md:flex gap-4 items-center ">
-            <span className="text-sm ">+7 999 999 000</span>
+            <span className="text-sm ">+7-931-111-44-55</span>
             <div className="flex gap-3   ">
               <img
                 src="/images/telegram.png"

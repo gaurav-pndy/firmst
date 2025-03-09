@@ -144,12 +144,13 @@
     },
 
     "feedbacks": {
+      "button": "Обратная связь",
       "content":[ 
         {
-          "userImage":         "src/feedbackImages/ekaterina/user.jpg",
+          "userImage":         "feedbackImages/ekaterina/user.jpg",
 
         "name": "Екатерина Попова",
-        "designation": "MD, Neurologist",
+        "designation": "невролог",
         "where": "Где?",
         "location": "Amrita Institute of Medical Sciences (AIMS) – Институт медицинских наук Амрита, г. Кочи (Кочин), штат Керала, Индия",
         "fieldHead": "Фокус стажировки (область)",
@@ -173,18 +174,18 @@
         "sponsorHead": "Кто был спонсором Вашей поездки?",
         "sponsor": "Первая поездка (5 месяцев) была совершена за счет средств Президентского гранта, а вторая (1 месяц) – за мой счет. ",
       "images": [
-        "src/feedbackImages/ekaterina/image1.jpg",
-        "src/feedbackImages/ekaterina/image2.jpg",
-        "src/feedbackImages/ekaterina/image3.jpg",  
-        "src/feedbackImages/ekaterina/image4.jpg",
-        "src/feedbackImages/ekaterina/image5.jpg",
-        "src/feedbackImages/ekaterina/image6.jpg",
-        "src/feedbackImages/ekaterina/image7.jpg",
-        "src/feedbackImages/ekaterina/image8.jpg",
-        "src/feedbackImages/ekaterina/image9.jpg",
-        "src/feedbackImages/ekaterina/image10.jpg",
-        "src/feedbackImages/ekaterina/image11.jpg",
-        "src/feedbackImages/ekaterina/image12.jpg"
+        "feedbackImages/ekaterina/image1.jpg",
+        "feedbackImages/ekaterina/image2.jpg",
+        "feedbackImages/ekaterina/image3.jpg",  
+        "feedbackImages/ekaterina/image4.jpg",
+        "feedbackImages/ekaterina/image5.jpg",
+        "feedbackImages/ekaterina/image6.jpg",
+        "feedbackImages/ekaterina/image7.jpg",
+        "feedbackImages/ekaterina/image8.jpg",
+        "feedbackImages/ekaterina/image9.jpg",
+        "feedbackImages/ekaterina/image10.jpg",
+        "feedbackImages/ekaterina/image11.jpg",
+        "feedbackImages/ekaterina/image12.jpg"
       ]
       },
         {
