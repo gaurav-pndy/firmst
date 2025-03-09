@@ -63,7 +63,7 @@ const FeedbackSection = () => {
                 variant="outline"
                 onClick={() => setSelectedFeedback(feedback)}
               >
-                Read Feedback
+                {t("feedbacks.button")}
               </Button>
             </Card>
           ))}
