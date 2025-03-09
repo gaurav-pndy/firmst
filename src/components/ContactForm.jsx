@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const ContactForm = () => {
+const ContactForm = ({ contactFormRef }) => {
   const { t } = useTranslation();
 
   // const [isChecked, setIsChecked] = useState(false);
@@ -69,114 +69,120 @@ const ContactForm = () => {
     }
   };
   return (
-    <div className="bg-white p-6 mt-10 md:p-8 rounded-xl shadow-gray-300 shadow-2xl max-w-4xl mx-auto border-3 border-gray-400 md:border-gray-200">
-      <h3
-        className="text-xl mt-2 md:text-[1.35rem] font-extrabold text-center text-[#cf6239] uppercase leading-6 tracking-wide"
-        dangerouslySetInnerHTML={{ __html: t("requestForm.heading") }}
-      >
-        {/* Submit the Request Form <br className="hidden md:inline" />
+    <div
+      id="contact-form"
+      ref={contactFormRef}
+      className=" max-w-5xl px-4 md:px-0 mx-auto"
+    >
+      <div className="bg-white p-6 mt-10 md:p-8 rounded-xl shadow-gray-300 shadow-2xl border-3 border-gray-300 md:border-gray-200">
+        <h3
+          className="text-xl mt-2 md:text-[1.35rem] font-extrabold text-center text-[#cf6239] uppercase leading-6 tracking-wide"
+          dangerouslySetInnerHTML={{ __html: t("requestForm.heading") }}
+        >
+          {/* Submit the Request Form <br className="hidden md:inline" />
         <span className="text-[#cf6239] font-extrabold">
           to Receive Complimentary Consultation Now!
         </span> */}
-        {/* {t("requestForm.heading")} */}
-      </h3>
+          {/* {t("requestForm.heading")} */}
+        </h3>
 
-      <h4 className="tracking-wide font-[800] text-center text-purple-900 mt-3">
+        {/* <h4 className="tracking-wide font-[800] text-center text-purple-900 mt-3">
         CONTACT INFORMATION
-      </h4>
+      </h4> */}
 
-      <form
-        onSubmit={handleSubmit}
-        className="grid md:max-w-[75%] mx-auto grid-cols-1 md:grid-cols-2 gap-7 mt-4"
-      >
-        <div>
-          <label className="block mb-1 text-gray-500">
-            {t("requestForm.name")}
-            {/* <span className="text-red-500">*</span> */}
-          </label>
-          <input
-            value={formData.name}
-            onChange={handleChange}
-            required
-            type="text"
-            name="name"
-            className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
-          />
-        </div>
-
-        <div>
-          <label className="block mb-1 text-gray-500">
-            {t("requestForm.contact")}
-            {/* <span className="text-red-500">*</span> */}
-          </label>
-          <input
-            value={formData.phone}
-            onChange={handlePhoneChange}
-            type="tel"
-            className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
-          />
-        </div>
-
-        <div>
-          <label className="block mb-1 text-gray-500">
-            {t("requestForm.specialization")}
-            {/* <span className="text-red-500">*</span> */}
-          </label>
-          <input
-            value={formData.specialization}
-            onChange={handleChange}
-            required
-            type="text"
-            name="specialization"
-            className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
-          />
-        </div>
-
-        <div>
-          <label className="block mb-1 text-gray-500">
-            {t("requestForm.email")}
-            {/* <span className="text-red-500">*</span> */}
-          </label>
-          <input
-            value={formData.email}
-            onChange={handleChange}
-            required
-            type="email"
-            name="email"
-            className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
-          />
-        </div>
-      </form>
-
-      <div className="md:max-w-[75%] mx-auto mt-5">
-        <p className="text-xs text-gray-500 mt-4 tracking-wide leading-tight">
-          {t("requestForm.content")}
-        </p>
-
-        <div className="flex items-center gap-2 mt-3">
-          <input
-            type="checkbox"
-            name="acceptTerms"
-            checked={formData.acceptTerms}
-            onChange={handleChange}
-            required
-            id="acceptTerms"
-            className="w-4 h-4"
-          />
-          <label className="text-[0.8rem] text-gray-500">
-            {t("requestForm.accept_terms")}
-
-            {/* <span className="text-red-500">*</span> */}
-          </label>
-        </div>
-
-        <button
-          type="submit"
-          disabled={!formData.acceptTerms}
-          className={`disabled:opacity-70 disabled:cursor-not-allowed bg-[#cf6239] hover:bg-[#b24e2a] transition text-white font-semibold py-3 w-[50%] text-sm cursor-pointer block mx-auto rounded mt-4`}
+        <form
+          onSubmit={handleSubmit}
+          className="grid md:max-w-[70%] mx-auto grid-cols-1 md:grid-cols-2 gap-7 mt-10"
         >
-          {t("requestForm.button")}
-        </button>
+          <div>
+            <label className="block mb-1 text-gray-500">
+              {t("requestForm.name")}
+              {/* <span className="text-red-500">*</span> */}
+            </label>
+            <input
+              value={formData.name}
+              onChange={handleChange}
+              required
+              type="text"
+              name="name"
+              className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-1 text-gray-500">
+              {t("requestForm.contact")}
+              {/* <span className="text-red-500">*</span> */}
+            </label>
+            <input
+              value={formData.phone}
+              onChange={handlePhoneChange}
+              type="tel"
+              className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-1 text-gray-500">
+              {t("requestForm.specialization")}
+              {/* <span className="text-red-500">*</span> */}
+            </label>
+            <input
+              value={formData.specialization}
+              onChange={handleChange}
+              required
+              type="text"
+              name="specialization"
+              className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-1 text-gray-500">
+              {t("requestForm.email")}
+              {/* <span className="text-red-500">*</span> */}
+            </label>
+            <input
+              value={formData.email}
+              onChange={handleChange}
+              required
+              type="email"
+              name="email"
+              className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-[#cf6239]"
+            />
+          </div>
+        </form>
+
+        <div className="md:max-w-[70%] mx-auto mt-5">
+          <p className="text-xs text-gray-500 mt-4 tracking-wide leading-tight">
+            {t("requestForm.content")}
+          </p>
+
+          <div className="flex items-center gap-2 mt-3">
+            <input
+              type="checkbox"
+              name="acceptTerms"
+              checked={formData.acceptTerms}
+              onChange={handleChange}
+              required
+              id="acceptTerms"
+              className="w-4 h-4"
+            />
+            <label className="text-[0.8rem] text-gray-500">
+              {t("requestForm.accept_terms")}
+
+              {/* <span className="text-red-500">*</span> */}
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            disabled={!formData.acceptTerms}
+            className={`disabled:opacity-70  disabled:cursor-not-allowed bg-[#cf6239] hover:bg-[#b24e2a] transition text-white tracking-wider py-3 w-[50%] text-sm cursor-pointer block mx-auto rounded mt-4 font-bold`}
+          >
+            {t("requestForm.button")}
+          </button>
+        </div>
       </div>
     </div>
   );

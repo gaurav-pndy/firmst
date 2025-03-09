@@ -10,7 +10,7 @@
     "heroSection": {
       "hero_title": "We Offer The Best Medical Internship Programmes Abroad",
       "hero_description": "Join the leading medical internship programmes designed to provide hands-on experience in top hospitals across the globe. Start your journey today with professional guidance every step of the way.",
-      "cta_button": "Free Consultation"
+      "cta_button": "Complimentary Consultation"
     },
   
     "success_stories": {
@@ -35,12 +35,77 @@
       "error_message": "Failed to submit the form. Please try again.",
       "network_error_message": "Network error! Please check your connection.",
       "content": "Your personal data is collected and processed in accordance with the Rules of the EU Parliament and Council of April 27, 2016 No. 2016/679, namely: “Regulations on the protection of individuals regarding the processing of their personal data and free movement of such data”, as well as on the basis of the repeal of Directive 95/46 / WE (general data protection rules), i.e. only on the basis of the consent of the owner of such data.",
-      "button": "Place Order"
+      "button": "SUBMIT"
     },
   
     "feedback": {
-      "heading": "Feedback Form Our Former Interns",
+      "heading": "Feedback From Our Former Interns",
       "subheading": "You’re Welcome To Network With Our Interns  <br className='hidden md:inline' /> To Learn Further About Us!"
+    },
+
+
+    "feedbacks": {
+      "content":[ 
+        {
+          "userImage":         "src/feedbackImages/ekaterina/user.jpg",
+
+        "name": "Ekaterina Popova",
+        "designation": "MD, Neurologist",
+        "where": "Where?",
+        "location": "Amrita Institute of Medical Sciences (AIMS), Kochi, Kerala, India",
+        "fieldHead": "Rotation focus (field)",
+        "field":"Clinical Neurology, Neuroimmunology",
+        "durationHead": "When and for how long?",
+        "duration":"5 months + 1 month. September 1, 2021 – February 1, 2022. July 1 – August 1, 2023.",
+        "roleHead": "Who were you at the time of the rotation?",
+        "role":"Senior (6 year) medical student (Sechenov University, Moscow, Russia) and Neurology resident (Research Center for Neurology, Moscow, Russia), respectively",
+        "impactHead": "How did this experience impact your life (from 0 to 10)?",
+        "impact":"10",
+        "experienceHead": "What did you do during the rotation?",
+        "experience":"I was purposed to pursue the two goals: to get a clinical experience in Neurology and start a scientific work and publish under the leadership of experts from AIMS, and both of them have been reached. I was posted both in the outpatient (OP) and inpatient (IP) departments, talked to the English-speaking patients and their relatives, performed the neurological exam and wrote the notes under the supervision of the doctors from the center and could even sign them by my name, close to the name of the supervisor, participated in the bedside rounds and gran rounds, went to the Neuroimmunology lab to learn the technique of some tests, collected the data for the research from the database, brainstormed on the research topic, worked with statistics and convened a research from a scratch to a full-text paper in English under the supervision. I cannot thank enough my scientific supervisor, Dr. Kannoth, the dean of the Department of Medicine at that time, Dr. Marwaha, and all the AIMS team for what they have done for me.",
+        "findingHead": "How did you find this rotation?",
+        "finding": "I have been an EAFO volunteer for years after I participated and won at the EAFO Basic Oncology Courses back in 2019. I was aimed to apply for the Presidential grant to Study Abroad of the Russian Federation and searched for the places to go and Dr. Soma suggested AIMS. Luckily, they were ready to accept me for the externship in the midst of COVID..! As a FIRMST co-founder I was a part of the EAFO team and Dr. Soma and the other members of the team helped me tremendously. Without them, I wouldn’t have been able to do it.",
+        "projectsHead": "Were there any long-haul projects of any kind as a result of this internship?",
+        "projects": "Yes. We’ve published one paper with my first authorship in the peer-reviewed Q1 journal and presented two of our works at the American Academy of Neurology conferences in 2022 and 2024, another manuscript is currently awaiting publication. ",
+        "adviceHead": "Any advice what could be improved in the externship?",
+        "advice":"I think, overall everything was amazing, everyone was helpful and kind to me. The only thing what I think could have been improved (but mostly from my side) is to determine realistic and reachable goals and concentrate on one-two major purposes. During my rotation I had to prepare for the international exam in medicine and in language proficiency, and this slowed down my research activities and clinical learning. Also, I had some unexpected (though so fabulous and memorable!) trips across India with my old or new friends which also, for the sake of wiser time management, could be planned in advance.",
+        "difficultiesHead": "Which difficulties you had to overcome and where you wish you could have any help with?",
+        "difficulties":"One of the worst things I had is that the stipend funds for some technical reasons could not be released for me immediately and in this situation EAFO team helped me tremendously and I am very-very grateful for this. Then, when I first came to Kochi I was thinking I could find some options to living somewhere rather that in the hotel, which could be a little costly. Although I managed to find a friend of my friend’s friend (:D) there we couldn’t find anything fitting me, so I stayed at the hotel. I would have been happy if I had some good options in advance. And the last, I think, although all the doctors and many patients in that part of India speak English, in some situations I had some difficulties in communication and had to learn very-very basics of the native language. ",
+        "sponsorHead": "Who sponsored your trip?",
+        "sponsor": "The first rotation (5 months) was covered by the Presidential Stipend to Study Abroad of the Russian Federation. The second one (1 month) I covered out of my pocket.",
+      "images": [
+        "src/feedbackImages/ekaterina/image1.jpg",
+        "src/feedbackImages/ekaterina/image2.jpg",
+        "src/feedbackImages/ekaterina/image3.jpg",  
+        "src/feedbackImages/ekaterina/image4.jpg",
+        "src/feedbackImages/ekaterina/image5.jpg",
+        "src/feedbackImages/ekaterina/image6.jpg",
+        "src/feedbackImages/ekaterina/image7.jpg",
+        "src/feedbackImages/ekaterina/image8.jpg",
+        "src/feedbackImages/ekaterina/image9.jpg",
+        "src/feedbackImages/ekaterina/image10.jpg",
+        "src/feedbackImages/ekaterina/image11.jpg",
+        "src/feedbackImages/ekaterina/image12.jpg",
+        "src/feedbackImages/ekaterina/image13.jpg",
+        "src/feedbackImages/ekaterina/image14.jpg",
+        "src/feedbackImages/ekaterina/image15.jpg",
+        "src/feedbackImages/ekaterina/image16.jpg",
+        "src/feedbackImages/ekaterina/image17.jpg",
+        "src/feedbackImages/ekaterina/image18.jpg",
+        "src/feedbackImages/ekaterina/image19.jpg"
+      ]
+      },
+        {
+          "name": "PAVEL FROLOV",
+          "designation":"MD, Neurologist",
+          "description": ""
+        },
+        {
+          "name": "ANNA VORONINNA",
+          "designation":"MD, Neurologist",
+          "description": ""
+        }
+      ]
     },
   
     "address":{
@@ -49,7 +114,7 @@
       "descriptionTwo":"Moscow, Russia, 125080"
     },
     "process": {
-      "heading": "HOW DO WE WORK",
+      "heading": "HOW DO WE WORK ?",
       "subheading": "Easy To Join",
       "steps": [
         {
@@ -142,9 +207,9 @@
       "deleteFail": "Failed to delete user."
     },
     "homepage": {
-      "title": "We offer the best medical intership programmes abroad",
+      "title": "We offer the Best Medical Internship programmes abroad",
       "description": "We help make your dream come true: we select study programs, scholarships and grants, and provide support at all stages of admission to the best universities in the world.",
-      "button": "free consultation"
+      "button": "Complimentary Consultation"
     },
     "successStory": {
       "title": "Our Success Stories",
@@ -166,6 +231,13 @@
       "services": "Services",
       "reviews": "Reviews",
       "about": "About"
+    },
+
+    "studyAbroad": {
+      "paragraph1": "FIRMST Study Abroad is a platform for tailoring personalized plan for international clinical or scientific rotations in many fields of Medicine and Allied Sciences. We are aimed to facilitate a better experience of away externships by working with reliable partner institutions, orchestrating official paperwork and helping deal with organizational issues before and during the rotation. We have already had much positive feedback from students and doctors who had such experience and eventually come to the decision to launch a full-fledged international exchange program. You can be the next candidate!",
+      "heading": "History behind and our Philosophy",
+      "paragraph2": "Some of you may have heard about or even participated in the FIRMST Forum – the Forum for Interdisciplinary Research in Medical Science and Technology which was first launched back in 2020. It was a separate project organized by the students under the umbrella of the Eurasian Federation of Oncology (EAFO) and lead by the EAFO Founder & CEO, Surgical Oncologist and Philanthropist Dr. Somasundaram SUBRAMANIAN (Dr. Soma). The scope of the FIRMST activities has been vast and included most medical specialties and allied sciences.",
+      "paragraph3": "As the time passed by, many members of our team graduated from the universities or achieved the other professional milestones and studied abroad, inspired by the history of the previous EAFO scholarships holders or doctors receiving any other help on the behalf of EAFO, either connections abroad or personal advice from the experienced EAFO or FIRMST experts. The preparation process for any rotation abroad from zero is very tedious and time-consuming, we went through all of this ourselves. Now, the time has come to share this experience with you, to shape it for your endeavors and benefit your career towards a better future in the interest of your patients and advancement of science and technology."
     },
     "dashboard": {
       "title": "User Dashboard",
@@ -195,7 +267,7 @@
       ]
     },
     "footer": {
-      "title": "CONTACT US TO RECEIVE COMPLIMENTARY CONSULTATION NOW !"
+      "title": "CONTACT US"
     }
   }
   

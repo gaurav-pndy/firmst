@@ -7,21 +7,24 @@ import ContactForm from "./components/ContactForm";
 import HospitalList from "./components/HospitalList";
 import HowItWorks from "./components/HowItWorks";
 import FeedbackBanner from "./components/FeedbackBanner";
-import TeamSection from "./components/TeamSection";
+// import TeamSection from "./components/FeedbackSection";
 import Footer from "./components/Footer";
+import { useRef } from "react";
+import FeedbackSection from "./components/FeedbackSection";
 
 function App() {
+  const contactFormRef = useRef();
   return (
     <div>
       <Navbar />
-      <HeroSection />
+      <HeroSection contactFormRef={contactFormRef} />
       <InfoCards />
       <StudyAbroad />
-      <ContactForm />
+      <ContactForm contactFormRef={contactFormRef} />
       <HospitalList />
       <HowItWorks />
       <FeedbackBanner />
-      <TeamSection />
+      <FeedbackSection />
       <Footer />
     </div>
   );
