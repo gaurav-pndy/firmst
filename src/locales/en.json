@@ -47,7 +47,7 @@
     "feedbacks": {
       "content":[ 
         {
-          "userImage":         "src/feedbackImages/ekaterina/user.jpg",
+          "userImage":         "/src/feedbackImages/ekaterina/user.jpg",
 
         "name": "Ekaterina Popova",
         "designation": "MD, Neurologist",
@@ -74,18 +74,18 @@
         "sponsorHead": "Who sponsored your trip?",
         "sponsor": "The first rotation (5 months) was covered by the Presidential Stipend to Study Abroad of the Russian Federation. The second one (1 month) I covered out of my pocket.",
       "images": [
-        "src/feedbackImages/ekaterina/image1.jpg",
-        "src/feedbackImages/ekaterina/image2.jpg",
-        "src/feedbackImages/ekaterina/image3.jpg",  
-        "src/feedbackImages/ekaterina/image4.jpg",
-        "src/feedbackImages/ekaterina/image5.jpg",
-        "src/feedbackImages/ekaterina/image6.jpg",
-        "src/feedbackImages/ekaterina/image7.jpg",
-        "src/feedbackImages/ekaterina/image8.jpg",
-        "src/feedbackImages/ekaterina/image9.jpg",
-        "src/feedbackImages/ekaterina/image10.jpg",
-        "src/feedbackImages/ekaterina/image11.jpg",
-        "src/feedbackImages/ekaterina/image12.jpg"
+        "/src/feedbackImages/ekaterina/image1.jpg",
+        "/src/feedbackImages/ekaterina/image2.jpg",
+        "/src/feedbackImages/ekaterina/image3.jpg",  
+        "/src/feedbackImages/ekaterina/image4.jpg",
+        "/src/feedbackImages/ekaterina/image5.jpg",
+        "/src/feedbackImages/ekaterina/image6.jpg",
+        "/src/feedbackImages/ekaterina/image7.jpg",
+        "/src/feedbackImages/ekaterina/image8.jpg",
+        "/src/feedbackImages/ekaterina/image9.jpg",
+        "/src/feedbackImages/ekaterina/image10.jpg",
+        "/src/feedbackImages/ekaterina/image11.jpg",
+        "/src/feedbackImages/ekaterina/image12.jpg"
 
       ]
       },
