@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import PropTypes from "prop-types"; // Import PropTypes
+import PropTypes from "prop-types";
 
 const HeroSection = ({ contactFormRef }) => {
   const { t } = useTranslation();

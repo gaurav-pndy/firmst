@@ -15,7 +15,6 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
 
-      // Make navbar visible when scrolling up or at the top
       const isVisible =
         prevScrollPos > currentScrollPos || currentScrollPos < 10;
 
@@ -25,7 +24,6 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener on component unmount
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
@@ -49,21 +47,30 @@ const Navbar = () => {
               +7-931-111-44-55
             </span>
             <div className="flex gap-2 md:gap-3">
-              <img
-                src="/images/telegram.png"
-                alt=""
-                className="w-7 h-7 rounded-lg "
-              />
-              <img
-                src="/images/whatsapp.png"
-                alt=""
-                className="w-7 h-7 rounded-lg "
-              />
-              <img
-                src="/images/instagram.png"
-                alt=""
-                className="w-7 h-7 rounded-lg"
-              />
+              <a href="https://telegram.org/" target="_blank">
+                <img
+                  src="/images/telegram.png"
+                  alt=""
+                  className="w-7 h-7 rounded-lg "
+                />
+              </a>
+              <a href="https://web.whatsapp.com/" target="_blank">
+                <img
+                  src="/images/whatsapp.png"
+                  alt=""
+                  className="w-7 h-7 rounded-lg "
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/firmst_2020?igsh=OTBkZXo4dGh0aWtq"
+                target="_blank"
+              >
+                <img
+                  src="/images/instagram.png"
+                  alt=""
+                  className="w-7 h-7 rounded-lg"
+                />
+              </a>
             </div>
           </div>
           <div className="md:ml-4">

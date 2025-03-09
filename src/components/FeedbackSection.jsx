@@ -4,31 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useTranslation } from "react-i18next";
 
-// const feedbacks = [
-//   {
-//     name: "John Doe",
-//     designation: "Software Engineer",
-//     short: "This platform has transformed the way I work. Highly recommended!",
-//     full: "This platform has transformed the way I work...",
-//     image: "https://randomuser.me/api/portraits/men/1.jpg",
-//     gallery: Array.from(
-//       { length: 5 },
-//       (_, i) => `https://picsum.photos/200?random=${i + 1}`
-//     ),
-//   },
-//   {
-//     name: "Jane Smith",
-//     designation: "Product Manager",
-//     short: "A seamless experience with excellent support!",
-//     full: "Using this platform has been a seamless experience...",
-//     image: "https://randomuser.me/api/portraits/women/2.jpg",
-//     gallery: Array.from(
-//       { length: 5 },
-//       (_, i) => `https://picsum.photos/200?random=${i + 6}`
-//     ),
-//   },
-// ];
-
+//
 const FeedbackSection = () => {
   const { t } = useTranslation();
 

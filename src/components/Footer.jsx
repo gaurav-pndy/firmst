@@ -49,21 +49,30 @@ const Footer = () => {
           <div className="hidden md:flex gap-4 items-center ">
             <span className="text-sm ">+7-931-111-44-55</span>
             <div className="flex gap-3   ">
-              <img
-                src="/images/telegram.png"
-                alt=""
-                className="w-7 h-7 rounded-lg"
-              />
-              <img
-                src="/images/whatsapp.png"
-                alt=""
-                className="w-7 h-7 rounded-lg"
-              />
-              <img
-                src="/images/instagram.png"
-                alt=""
-                className="w-7 h-7 rounded-lg"
-              />
+              <a href="https://telegram.org/" target="_blank">
+                <img
+                  src="/images/telegram.png"
+                  alt=""
+                  className="w-7 h-7 rounded-lg"
+                />
+              </a>
+              <a href="https://web.whatsapp.com/" target="_blank">
+                <img
+                  src="/images/whatsapp.png"
+                  alt=""
+                  className="w-7 h-7 rounded-lg"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/firmst_2020?igsh=OTBkZXo4dGh0aWtq"
+                target="_blank"
+              >
+                <img
+                  src="/images/instagram.png"
+                  alt=""
+                  className="w-7 h-7 rounded-lg"
+                />
+              </a>
             </div>
           </div>
         </div>
