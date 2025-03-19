@@ -15,10 +15,10 @@
   
     "success_stories": {
       "heading": "Our Success Stories",
-      "story1": "15 years of experience in organising successful Medical programmes for Healthcare Professionals!",
-      "story2": "Exposure to numerous Medical cases & hands-on Opportunities! <br/> <br/> More than 100 Medical Interns have been sent abroad!",
-      "story3": "Get Trained By Renowned Medical Experts",
-      "story4": "Fast & Guaranteed Visa Application Services"
+      "story1": "15 years of experience in organising successful medical programmes for healthcare professionals!",
+      "story2": "Exposure to numerous medical cases & hands-on opportunities! <br/> <br/> More than 100 medical interns have been sent abroad!",
+      "story3": "Get trained by renowned medical experts.",
+      "story4": "Guidance with visa application."
     },
   
     "requestForm": {
@@ -39,8 +39,8 @@
     },
   
     "feedback": {
-      "heading": "Feedback From Our Former Interns",
-      "subheading": "You’re Welcome To Network With Our Interns  <br className='hidden md:inline' /> To Learn Further About Us!"
+      "heading": "Feedback from our former interns",
+      "subheading": "You are welcome to network with our former interns <br/> to learn about their experience firsthand"
     },
 
 
@@ -136,7 +136,7 @@
     },
   
     "programs": {
-      "heading": " List Of Hospitals Where <br /> Firmsts Fellowship Programmes Are Conducted.",
+      "heading": " Institutions where FIRMST rotations/fellowship programs have been recently conducted",
       "locations": [
         {
           "title": "INDIA",
@@ -231,7 +231,7 @@
     "studyAbroad": {
       "paragraph1": "FIRMST Study Abroad is a platform for tailoring personalized plan for international clinical or scientific rotations in many fields of Medicine and Allied Sciences. We are aimed to facilitate a better experience of away externships by working with reliable partner institutions, orchestrating official paperwork and helping deal with organizational issues before and during the rotation. We have already had much positive feedback from students and doctors who had such experience and eventually come to the decision to launch a full-fledged international exchange program. You can be the next candidate!",
       "heading": "History behind and our Philosophy",
-      "paragraph2": "Some of you may have heard about or even participated in the FIRMST Forum – the Forum for Interdisciplinary Research in Medical Science and Technology which was first launched back in 2020. It was a separate project organized by the students under the umbrella of the Eurasian Federation of Oncology (EAFO) and lead by the EAFO Founder & CEO, Surgical Oncologist and Philanthropist Dr. Somasundaram SUBRAMANIAN (Dr. Soma). The scope of the FIRMST activities has been vast and included most medical specialties and allied sciences.",
+      "paragraph2": "Some of you may have heard about or even participated in the <a class='text-blue-700 underline font-semibold' href='https://www.firmst.tech/' target ='_blank'> FIRMST Forum </a> – the Forum for Interdisciplinary Research in Medical Science and Technology which was first launched back in 2020. It was a separate project organized by the students under the umbrella of the <a class='text-blue-700 underline font-semibold' href='https://www.eafo.info/' target='_blank'> Eurasian Federation of Oncology (EAFO)</a> and lead by the EAFO Founder & CEO, Surgical Oncologist and Philanthropist <a class='text-blue-700 underline font-semibold' href='https://www.drsoma.info/' target='_blank'> Dr. Somasundaram SUBRAMANIAN (Dr. Soma)</a>. The scope of the FIRMST activities has been vast and included most medical specialties and allied sciences.",
       "paragraph3": "As the time passed by, many members of our team graduated from the universities or achieved the other professional milestones and studied abroad, inspired by the history of the previous EAFO scholarships holders or doctors receiving any other help on the behalf of EAFO, either connections abroad or personal advice from the experienced EAFO or FIRMST experts. The preparation process for any rotation abroad from zero is very tedious and time-consuming, we went through all of this ourselves. Now, the time has come to share this experience with you, to shape it for your endeavors and benefit your career towards a better future in the interest of your patients and advancement of science and technology."
     },
     "dashboard": {
