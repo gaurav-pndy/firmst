@@ -30,10 +30,12 @@ const StudyAbroad = () => {
                   {t("studyAbroad.heading")}
                 </button>
               </DialogTrigger>
-              <DialogContent className="px-3">
+              <DialogContent className="px-3 md:px-5 md:max-w-[50vw]">
                 <DialogHeader className="mt-4">
-                  <DialogTitle>{t("studyAbroad.heading")}</DialogTitle>
-                  <DialogDescription>
+                  <DialogTitle className="md:text-2xl">
+                    {t("studyAbroad.heading")}
+                  </DialogTitle>
+                  <DialogDescription className="md:text-lg">
                     <p
                       dangerouslySetInnerHTML={{
                         __html: t("studyAbroad.paragraph2"),
