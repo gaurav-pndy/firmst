@@ -116,7 +116,7 @@ const Navbar = () => {
               </button>
 
               {dropdownOpen && (
-                <ul className="absolute md:top-9 w-full bg-white border border-orange-400 rounded-lg shadow-md mt-1 right-0 z-10 overflow-hidden">
+                <ul className="absolute md:top-9 w-full bg-white border border-[#002379] rounded-lg shadow-md mt-1 right-0 z-10 overflow-hidden">
                   {languages.map((lang) => (
                     <li
                       key={lang.code}
